@@ -10,7 +10,7 @@ export default class IndividualCandies extends Component {
             {candy.name}
             of type
             {
-              .find().name
+              // .find().name
             }
           </div>
         ))}

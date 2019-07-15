@@ -1,0 +1,27 @@
+{
+  "stores": [
+    {"id":1, "name":"big store"},
+    {"id":2, "name":"bing bong"},
+    {"id":3, "name":"woo woo"},
+    {"id":4, "name":"kroger"},
+    {"id":5, "name":"publix"}
+  ],
+  "employees": [
+    {"id":1, "name":"jeff"},
+    {"id":2, "name":"jimmy"},
+    {"id":3, "name":"jeremy"},
+    {"id":4, "name":"jack"},
+    {"id":5, "name":"joe"}
+  ],
+  "candyTypes": [
+    {"id":1, "name":"chocolates"},
+    {"id":2, "name":"sweets"},
+    {"id":3, "name":"sours"}
+  ],
+  "candies": [
+    {"id":1, "name":"snickers"},
+    {"id":2, "name":"skittles"},
+    {"id":3, "name":"jolly ranchers"},
+    {"id":4, "name":"warheads"}
+  ]
+}
