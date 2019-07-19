@@ -5,6 +5,7 @@ import CandyTypes from "./CandyTypes/CandyTypes";
 import { Route } from "react-router-dom";
 
 export default class ApplicationViews extends Component {
+  //Set placeholder for state to render
   state = {
     stores: [],
     employees: [],
@@ -12,9 +13,9 @@ export default class ApplicationViews extends Component {
     candies: []
   };
 
+  //Once init render, update state with an api object and re-render
   componentDidMount() {
     const newState = {};
-
     fetch("http://localhost:5002/stores")
       .then(r => r.json())
       .then(stores => (newState.stores = stores))
@@ -25,6 +26,7 @@ export default class ApplicationViews extends Component {
       .then(() => this.setState(newState));
   }
 
+  // Handles all routing to specific pages
   render() {
     return (
       <React.Fragment>
