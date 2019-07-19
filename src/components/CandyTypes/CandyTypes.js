@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class CandyList extends Component {
+export default class CandyTypes extends Component {
   render() {
     return (
       <section className="candyTypes">
