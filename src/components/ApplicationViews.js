@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { Route } from "react-router-dom";
 import EmployeeList from "./Employees/Employees";
 import StoreList from "./StoreLocations/StoreLocations";
 import CandyTypes from "./CandyTypes/CandyTypes";
-import { Route } from "react-router-dom";
+import SearchResults from "./SearchResults/SearchResults";
 
 export default class ApplicationViews extends Component {
   //Set placeholder for state to render
@@ -35,6 +36,17 @@ export default class ApplicationViews extends Component {
           path="/"
           render={props => {
             return <StoreList stores={this.state.stores} />;
+          }}
+        />
+        <Route
+          path="/search"
+          render={props => {
+            return <SearchResults results={this.props.results} />;
+            // if (this.isAuthenticated()) {
+            //   return <SearchResults results={this.props.results} />;
+            // } else {
+            //   return <Redirect to="/login" />;
+            // }
           }}
         />
         <Route
